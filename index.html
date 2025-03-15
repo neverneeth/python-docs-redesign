@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Documentation</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            font-size: 2.5rem;
+            padding: 50px 0;
+            background-color: #4c9ae9;
+            color: white;
+            margin-bottom: 20px;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #0073e6;
+            margin: 0 20px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #0056b3;
+        }
+        section {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+        section:hover {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+        h2 {
+            color: #0073e6;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 0;
+            font-size: 0.9rem;
+            color: #777;
+            background-color: #f0f0f0;
+        }
+        pre {
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 20px 0;
+        }
+        .doc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .doc-column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .doc-column a {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #0073e6;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .doc-column a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+        .doc-column span {
+            font-size: 0.9rem;
+            color: #555;
+        }
+        a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>Python Documentation</header>
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#installation">Installation</a>
+        <a href="#syntax">Syntax</a>
+        <a href="#sections">Sections</a>
+        <a href="#indices">Indices</a>
+        <a href="#info">Info</a>
+    </nav>
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Python is a high-level, interpreted programming language known for its simplicity and versatility.</p>
+    </section>
+    <section id="installation">
+        <h2>Installation</h2>
+        <p>Download Python from the official website and follow the installation instructions for your OS.</p>
+        <a href="https://docs.python.org/3/using/index.html" target="_blank">Check this out</a>
+    </section>
+    <section id="syntax">
+        <h2>Basic Syntax</h2>
+        <p>Python uses indentation for code blocks instead of braces. Example:</p>
+        <pre>
+            <code>
+                def hello():
+                    print("Hello, World!")
+            </code>
+        </pre>
+    </section>
+    <section id="sections">
+        <h2>Documentation Sections</h2>
+        <div class="doc-grid">
+            <div class="doc-column">
+                <a href="https://docs.python.org/3/whatsnew/3.13.html">What's new in Python 3.13?</a>
+                
+                <a href="https://docs.python.org/3/tutorial/index.html">Tutorial</a>
+                <span>Start here: a tour of Python's syntax and features</span>
+                
+                <a href="https://docs.python.org/3/library/index.html">Library reference</a>
+                <span>Standard library and builtins</span>
+                
+                <a href="https://docs.python.org/3/reference/index.html">Language reference</a>
+                <span>Syntax and language elements</span>
+                
+                <a href="https://docs.python.org/3/using/index.html">Python setup and usage</a>
+                <span>How to install, configure, and use Python</span>
+                
+                <a href="https://docs.python.org/3/howto/index.html">Python HOWTOs</a>
+                <span>In-depth topic manuals</span>
+            </div>
+    
+            <div class="doc-column">
+                <a href="https://docs.python.org/3/installing/index.html">Installing Python modules</a>
+                <span>Third-party modules and PyPI.org</span>
+                
+                <a href="https://docs.python.org/3/distributing/index.html">Distributing Python modules</a>
+                <span>Publishing modules for others</span>
+                
+                <a href="https://docs.python.org/3/extending/index.html">Extending and embedding</a>
+                <span>For C/C++ programmers</span>
+                
+                <a href="https://docs.python.org/3/c-api/index.html">Python's C API</a>
+                <span>C API reference</span>
+                
+                <a href="https://docs.python.org/3/faq/index.html">FAQs</a>
+                <span>Frequently asked questions (with answers!)</span>
+                
+                <a href="https://docs.python.org/3/deprecations/index.html">Deprecations</a>
+                <span>Deprecated functionality</span>
+            </div>
+        </div>
+    </section>
+    
+    <section id="indices">
+        <h2>Indices, Glossary, and Search</h2>
+        <div class="doc-grid">
+            <div class="doc-column">
+                <a href="https://docs.python.org/3/py-modindex.htmll">Global module index</a>
+                <span>All modules and libraries</span>
+                
+                <a href="https://docs.python.org/3/genindex.html">General index</a>
+                <span>All functions, classes, and terms</span>
+                
+                <a href="https://docs.python.org/3/glossary.html">Glossary</a>
+                <span>Terms explained</span>
+            </div>
+    
+            <div class="doc-column">
+                <a href="https://docs.python.org/3/search.html">Search page</a>
+                <span>Search this documentation</span>
+                
+                <a href="https://docs.python.org/3/contents.html">Complete table of contents</a>
+                <span>Lists all sections and subsections</span>
+            </div>
+        </div>
+    </section>
+    
+    <section id="info">
+        <h2>Project Information</h2>
+        <div class="doc-grid">
+            <div class="doc-column">
+                <a href="https://docs.python.org/3/bugs.html">Reporting issues</a>
+                <a href="https://devguide.python.org/documentation/help-documenting/">Contributing to Docs</a>
+                <a href="https://docs.python.org/3/download.html">Download the documentation</a>
+                <a href="https://docs.python.org/3/license.html">History and license of Python</a>
+                <a href="https://docs.python.org/3/copyright.html">Copyright</a>
+                <a href="https://docs.python.org/3/about.html">About the documentation</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        &copy; 2025 Python Docs - Redesigned
+    </footer>
+</body>
+</html>
